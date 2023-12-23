@@ -1,7 +1,10 @@
-#include <iostream>
-using namespace std;
+from gpiozero import LED
+from time import sleep
 
-int main (void)
-{
+led1 = LED(23)
 
-}
+while True:
+    led1.on()
+    sleep(0.35)
+    led1.off()
+    sleep(0.15)
